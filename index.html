@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chalezim Hospedagens — Chalés rústicos e aconchegantes para uma experiência inesquecível na natureza. Reserve agora o seu refúgio." />
+  <meta name="theme-color" content="#2c1a0e" />
+  <title>Chalezim Hospedagens</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#inicio" class="navbar__logo">
+        <span class="navbar__logo-title">Chalezim</span>
+        <span class="navbar__logo-sub">Hospedagens</span>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#inicio" class="navbar__link">Início</a>
+        <a href="#chales" class="navbar__link">Nossos Chalés</a>
+        <a href="#area-comum" class="navbar__link">Área Comum</a>
+        <a href="#comodidades" class="navbar__link">Comodidades</a>
+        <a href="#galeria" class="navbar__link">Galeria</a>
+        <a href="#localizacao" class="navbar__link">Localização</a>
+        <a href="#contato" class="navbar__link navbar__link--cta">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide" style="background-image: url('fotos/Área comum/IMG-20260619-WA0006.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('fotos/Tijolinho 1/IMG-20260619-WA0029.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('fotos/Tijolinho 2/IMG-20260619-WA0057.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('fotos/Área comum/IMG-20260619-WA0074.jpg')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Bem-vindo ao</p>
+      <h1 class="hero__title">Chalezim<br /><em>Hospedagens</em></h1>
+      <p class="hero__subtitle">Um refúgio aconchegante entre a natureza,<br />onde cada detalhe foi pensado para o seu descanso.</p>
+      <div class="hero__actions">
+        <a href="#chales" class="btn btn--primary">Conheça os Chalés</a>
+        <a href="#contato" class="btn btn--outline">Reservar Agora</a>
+      </div>
+    </div>
+    <div class="hero__dots" id="heroDots"></div>
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Foto anterior">&#8592;</button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Próxima foto">&#8594;</button>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre section" id="sobre">
+    <div class="container">
+      <div class="sobre__grid">
+        <div class="sobre__image-wrap">
+          <img src="fotos/Área comum/IMG-20260619-WA0009.jpg" alt="Vista do Chalezim" class="sobre__image" loading="lazy" />
+        </div>
+        <div class="sobre__content">
+          <span class="section__eyebrow">Nossa História</span>
+          <h2 class="section__title">Um lugar onde a natureza e o aconchego se encontram</h2>
+          <p class="sobre__text">
+            <!-- PLACEHOLDER: Insira aqui a história e descrição do Chalezim. Conte sobre a inspiração por trás do projeto, a localização, o que torna o lugar especial e a proposta de experiência para os hóspedes. -->
+            O Chalezim nasceu do desejo de criar um refúgio autêntico, onde arquitetura rústica e natureza exuberante se unem para proporcionar momentos inesquecíveis. Cada detalhe foi cuidadosamente pensado para que você se sinta em casa, longe da agitação do cotidiano.
+          </p>
+          <p class="sobre__text">
+            <!-- PLACEHOLDER: Adicione mais informações sobre a região, diferenciais do lugar, estrutura, etc. -->
+            Nossos chalés de tijolinho combinam charme rústico com todo o conforto moderno que você merece. Venha viver essa experiência única.
+          </p>
+          <a href="#chales" class="btn btn--primary">Ver Acomodações</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHALÉS ===== -->
+  <section class="chales section section--alt" id="chales">
+    <div class="container">
+      <span class="section__eyebrow">Acomodações</span>
+      <h2 class="section__title">Nossos Chalés</h2>
+      <p class="section__subtitle">Dois chalés exclusivos, cada um com sua personalidade, prontos para a sua melhor estadia.</p>
+
+      <div class="chales__grid">
+
+        <!-- Tijolinho 1 -->
+        <div class="chale-card" id="tijolinho1">
+          <div class="chale-card__gallery">
+            <div class="chale-card__slider" data-slider="t1">
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0029.jpg" alt="Chalé Tijolinho 1" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0030.jpg" alt="Chalé Tijolinho 1 - Vista" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0031.jpg" alt="Chalé Tijolinho 1 - Interior" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0032.jpg" alt="Chalé Tijolinho 1 - Detalhes" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0033.jpg" alt="Chalé Tijolinho 1 - Banheiro" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0037(1).jpg" alt="Chalé Tijolinho 1 - Área" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0037.jpg" alt="Chalé Tijolinho 1 - Varanda" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0038.jpg" alt="Chalé Tijolinho 1 - Cozinha" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 1/IMG-20260619-WA0039.jpg" alt="Chalé Tijolinho 1 - Externo" loading="lazy" /></div>
+            </div>
+            <button class="chale-card__arrow chale-card__arrow--prev" data-target="t1" aria-label="Foto anterior">&#8592;</button>
+            <button class="chale-card__arrow chale-card__arrow--next" data-target="t1" aria-label="Próxima foto">&#8594;</button>
+            <div class="chale-card__dots" data-dots="t1"></div>
+          </div>
+          <div class="chale-card__info">
+            <div class="chale-card__badge">Chalé 1</div>
+            <h3 class="chale-card__title">Tijolinho 1</h3>
+            <p class="chale-card__desc">
+              <!-- PLACEHOLDER: Descreva o Tijolinho 1 — capacidade de hóspedes, características especiais, vista, diferenciais, etc. -->
+              Aconchegante e cheio de personalidade, o Tijolinho 1 encanta com suas paredes de tijolo à vista, vigas de madeira e uma vista deslumbrante para a natureza. Perfeito para casais que buscam privacidade e conforto em um ambiente rústico e moderno.
+            </p>
+            <ul class="chale-card__features">
+              <li><i class="fas fa-bed"></i> <!-- PLACEHOLDER: ex: 1 Quarto de Casal --> 1 Quarto</li>
+              <li><i class="fas fa-users"></i> <!-- PLACEHOLDER: Capacidade --> 2 Hóspedes</li>
+              <li><i class="fas fa-snowflake"></i> Ar-condicionado</li>
+              <li><i class="fas fa-wifi"></i> Wi-Fi</li>
+              <li><i class="fas fa-tv"></i> Smart TV</li>
+              <li><i class="fas fa-utensils"></i> Cozinha equipada</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--full">Reservar Tijolinho 1</a>
+          </div>
+        </div>
+
+        <!-- Tijolinho 2 -->
+        <div class="chale-card" id="tijolinho2">
+          <div class="chale-card__gallery">
+            <div class="chale-card__slider" data-slider="t2">
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0057.jpg" alt="Chalé Tijolinho 2" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0059.jpg" alt="Chalé Tijolinho 2 - Vista" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0060.jpg" alt="Chalé Tijolinho 2 - Interior" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0061.jpg" alt="Chalé Tijolinho 2 - Detalhes" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0062.jpg" alt="Chalé Tijolinho 2 - Quarto" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0066.jpg" alt="Chalé Tijolinho 2 - Banheiro" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0067.jpg" alt="Chalé Tijolinho 2 - Área" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0069.jpg" alt="Chalé Tijolinho 2 - Varanda" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0070.jpg" alt="Chalé Tijolinho 2 - Cozinha" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0071.jpg" alt="Chalé Tijolinho 2 - Sala" loading="lazy" /></div>
+              <div class="chale-card__slide"><img src="fotos/Tijolinho 2/IMG-20260619-WA0072.jpg" alt="Chalé Tijolinho 2 - Externo" loading="lazy" /></div>
+            </div>
+            <button class="chale-card__arrow chale-card__arrow--prev" data-target="t2" aria-label="Foto anterior">&#8592;</button>
+            <button class="chale-card__arrow chale-card__arrow--next" data-target="t2" aria-label="Próxima foto">&#8594;</button>
+            <div class="chale-card__dots" data-dots="t2"></div>
+          </div>
+          <div class="chale-card__info">
+            <div class="chale-card__badge">Chalé 2</div>
+            <h3 class="chale-card__title">Tijolinho 2</h3>
+            <p class="chale-card__desc">
+              <!-- PLACEHOLDER: Descreva o Tijolinho 2 — capacidade de hóspedes, características especiais, vista, diferenciais, etc. -->
+              O Tijolinho 2 é um refúgio especial que une o rústico ao sofisticado. Com o mesmo charme do tijolo à vista e ambientes cuidadosamente decorados, este chalé oferece conforto e privacidade para uma experiência verdadeiramente memorável.
+            </p>
+            <ul class="chale-card__features">
+              <li><i class="fas fa-bed"></i> <!-- PLACEHOLDER: ex: 1 Quarto de Casal --> 1 Quarto</li>
+              <li><i class="fas fa-users"></i> <!-- PLACEHOLDER: Capacidade --> 2 Hóspedes</li>
+              <li><i class="fas fa-snowflake"></i> Ar-condicionado</li>
+              <li><i class="fas fa-wifi"></i> Wi-Fi</li>
+              <li><i class="fas fa-tv"></i> Smart TV</li>
+              <li><i class="fas fa-utensils"></i> Cozinha equipada</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--full">Reservar Tijolinho 2</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÁREA COMUM ===== -->
+  <section class="area-comum section" id="area-comum">
+    <div class="container">
+      <span class="section__eyebrow">Estrutura</span>
+      <h2 class="section__title">Área Comum</h2>
+      <p class="section__subtitle">Um espaço pensado para relaxar, conviver e aproveitar a natureza ao redor.</p>
+      <div class="area-comum__grid">
+        <div class="area-comum__main">
+          <img src="fotos/Área comum/IMG-20260619-WA0006.jpg" alt="Área comum - Vista panorâmica" loading="lazy" class="area-comum__img area-comum__img--main" />
+        </div>
+        <div class="area-comum__side">
+          <img src="fotos/Área comum/IMG-20260619-WA0007.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+          <img src="fotos/Área comum/IMG-20260619-WA0008.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+          <img src="fotos/Área comum/IMG-20260619-WA0009.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+          <img src="fotos/Área comum/IMG-20260619-WA0011.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+          <img src="fotos/Área comum/IMG-20260619-WA0015.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+          <img src="fotos/Área comum/IMG-20260619-WA0074.jpg" alt="Área comum" loading="lazy" class="area-comum__img" />
+        </div>
+      </div>
+      <p class="area-comum__desc">
+        <!-- PLACEHOLDER: Descreva a área comum — deck, piscina, churrasqueira, área de lazer, natureza, etc. -->
+        Nossa área comum é o coração do Chalezim. Um espaço amplo e acolhedor com vista deslumbrante para a natureza, perfeito para relaxar, apreciar o pôr do sol e criar memórias inesquecíveis.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== COMODIDADES ===== -->
+  <section class="comodidades section section--alt" id="comodidades">
+    <div class="container">
+      <span class="section__eyebrow">O que oferecemos</span>
+      <h2 class="section__title">Comodidades</h2>
+      <p class="section__subtitle">Tudo o que você precisa para uma estadia completa e inesquecível.</p>
+      <div class="comodidades__grid">
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-wifi"></i></div>
+          <h4>Wi-Fi de Alta Velocidade</h4>
+          <p>Internet disponível em todos os chalés</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-snowflake"></i></div>
+          <h4>Ar-condicionado</h4>
+          <p>Conforto térmico em qualquer estação</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-tv"></i></div>
+          <h4>Smart TV</h4>
+          <p>Entretenimento com streaming</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-utensils"></i></div>
+          <h4>Cozinha Equipada</h4>
+          <p>Tudo para preparar suas refeições</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-parking"></i></div>
+          <h4>Estacionamento</h4>
+          <!-- PLACEHOLDER: Confirme a disponibilidade de estacionamento -->
+          <p>Estacionamento privativo no local</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-leaf"></i></div>
+          <h4>Contato com a Natureza</h4>
+          <p>Rodeados por verde e vistas incríveis</p>
+        </div>
+        <div class="comodidade-item">
+          <div class="comodidade-item__icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Privacidade e Segurança</h4>
+          <p>Propriedade fechada e exclusiva</p>
+        </div>
+        <div class="comodidade-item">
+          <!-- PLACEHOLDER: Adicione ou remova comodidades conforme a estrutura real do lugar -->
+          <div class="comodidade-item__icon"><i class="fas fa-fire"></i></div>
+          <h4>Área de Lazer</h4>
+          <p>Espaço para relaxar e conviver</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria section" id="galeria">
+    <div class="container">
+      <span class="section__eyebrow">Fotos</span>
+      <h2 class="section__title">Nossa Galeria</h2>
+      <p class="section__subtitle">Deixe as imagens contarem a história do Chalezim.</p>
+      <div class="galeria__grid" id="galeriaGrid">
+        <!-- Área Comum -->
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0006.jpg" data-caption="Área comum — Vista">
+          <img src="fotos/Área comum/IMG-20260619-WA0006.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0007.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0007.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0008.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0008.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0009.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0009.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0011.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0011.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0015.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0015.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Área comum/IMG-20260619-WA0074.jpg" data-caption="Área comum">
+          <img src="fotos/Área comum/IMG-20260619-WA0074.jpg" alt="Área comum" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <!-- Tijolinho 1 -->
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0029.jpg" data-caption="Tijolinho 1">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0029.jpg" alt="Tijolinho 1" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0030.jpg" data-caption="Tijolinho 1">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0030.jpg" alt="Tijolinho 1" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0031.jpg" data-caption="Tijolinho 1 — Interior">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0031.jpg" alt="Tijolinho 1 - Interior" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0032.jpg" data-caption="Tijolinho 1">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0032.jpg" alt="Tijolinho 1" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0033.jpg" data-caption="Tijolinho 1">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0033.jpg" alt="Tijolinho 1" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 1/IMG-20260619-WA0038.jpg" data-caption="Tijolinho 1 — Cozinha">
+          <img src="fotos/Tijolinho 1/IMG-20260619-WA0038.jpg" alt="Tijolinho 1 - Cozinha" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <!-- Tijolinho 2 -->
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0057.jpg" data-caption="Tijolinho 2">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0057.jpg" alt="Tijolinho 2" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0059.jpg" data-caption="Tijolinho 2">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0059.jpg" alt="Tijolinho 2" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0060.jpg" data-caption="Tijolinho 2">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0060.jpg" alt="Tijolinho 2" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0061.jpg" data-caption="Tijolinho 2">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0061.jpg" alt="Tijolinho 2" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0066.jpg" data-caption="Tijolinho 2 — Banheiro">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0066.jpg" alt="Tijolinho 2 - Banheiro" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="galeria__item" data-src="fotos/Tijolinho 2/IMG-20260619-WA0072.jpg" data-caption="Tijolinho 2">
+          <img src="fotos/Tijolinho 2/IMG-20260619-WA0072.jpg" alt="Tijolinho 2" loading="lazy" />
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Foto anterior">&#8592;</button>
+    <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Próxima foto">&#8594;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===== LOCALIZAÇÃO ===== -->
+  <section class="localizacao section section--alt" id="localizacao">
+    <div class="container">
+      <span class="section__eyebrow">Como nos encontrar</span>
+      <h2 class="section__title">Localização</h2>
+      <div class="localizacao__grid">
+        <div class="localizacao__info">
+          <div class="localizacao__item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Endereço</h4>
+              <!-- PLACEHOLDER: Insira o endereço completo do Chalezim -->
+              <p>Rua/Estrada [INSERIR ENDEREÇO COMPLETO]<br />Cidade — Estado, CEP</p>
+            </div>
+          </div>
+          <div class="localizacao__item">
+            <i class="fas fa-car"></i>
+            <div>
+              <h4>Como Chegar</h4>
+              <!-- PLACEHOLDER: Descreva como chegar ao Chalezim (rodovias, pontos de referência, etc.) -->
+              <p>[INSERIR INSTRUÇÕES DE COMO CHEGAR — ex: a X km da cidade de Y, pela rodovia Z. Referência: próximo a...]</p>
+            </div>
+          </div>
+          <div class="localizacao__item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Check-in / Check-out</h4>
+              <!-- PLACEHOLDER: Confirme os horários de check-in e check-out -->
+              <p>Check-in: a partir das 14h<br />Check-out: até as 12h</p>
+            </div>
+          </div>
+          <a
+            href="https://maps.google.com/?q=[PLACEHOLDER_ENDERECO_CHALEZIM]"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary"
+          >
+            <!-- PLACEHOLDER: Substitua o link pelo endereço correto no Google Maps -->
+            <i class="fas fa-map-marker-alt"></i> Ver no Google Maps
+          </a>
+        </div>
+        <div class="localizacao__map">
+          <!-- PLACEHOLDER: Substitua pelo iframe do Google Maps com a localização real -->
+          <div class="localizacao__map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Mapa em breve</p>
+            <small><!-- PLACEHOLDER: Cole aqui o iframe do Google Maps --></small>
+          </div>
+          <!-- Exemplo de como inserir o mapa real:
+          <iframe
+            src="https://www.google.com/maps/embed?pb=INSERIR_EMBED_URL_AQUI"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Localização do Chalezim"
+          ></iframe>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO E RESERVA ===== -->
+  <section class="contato section" id="contato">
+    <div class="container">
+      <span class="section__eyebrow">Fale Conosco</span>
+      <h2 class="section__title">Reserve Sua Estadia</h2>
+      <p class="section__subtitle">Entre em contato ou faça sua reserva diretamente pelo Airbnb.</p>
+
+      <div class="contato__grid">
+
+        <!-- Airbnb -->
+        <div class="contato__card contato__card--airbnb">
+          <div class="contato__card-icon"><i class="fab fa-airbnb"></i></div>
+          <h3>Reserve pelo Airbnb</h3>
+          <p>Consulte disponibilidade e realize sua reserva com toda a segurança da plataforma Airbnb.</p>
+          <div class="contato__airbnb-btns">
+            <a
+              href="https://www.airbnb.com.br/rooms/[PLACEHOLDER_ID_TIJOLINHO1]"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--airbnb"
+            >
+              <!-- PLACEHOLDER: Substitua pelo link real do Airbnb do Tijolinho 1 -->
+              <i class="fab fa-airbnb"></i> Tijolinho 1 no Airbnb
+            </a>
+            <a
+              href="https://www.airbnb.com.br/rooms/[PLACEHOLDER_ID_TIJOLINHO2]"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--airbnb"
+            >
+              <!-- PLACEHOLDER: Substitua pelo link real do Airbnb do Tijolinho 2 -->
+              <i class="fab fa-airbnb"></i> Tijolinho 2 no Airbnb
+            </a>
+          </div>
+        </div>
+
+        <!-- WhatsApp / Contato direto -->
+        <div class="contato__card contato__card--whatsapp">
+          <div class="contato__card-icon"><i class="fab fa-whatsapp"></i></div>
+          <h3>Contato Direto</h3>
+          <p>Prefere falar com a gente diretamente? Envie uma mensagem pelo WhatsApp ou e-mail.</p>
+          <div class="contato__links">
+            <a
+              href="https://wa.me/55[PLACEHOLDER_TELEFONE]?text=Olá!%20Tenho%20interesse%20em%20uma%20reserva%20no%20Chalezim."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--whatsapp"
+            >
+              <!-- PLACEHOLDER: Substitua [PLACEHOLDER_TELEFONE] pelo número de WhatsApp com DDD (ex: 31999999999) -->
+              <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+            </a>
+            <a
+              href="mailto:[PLACEHOLDER_EMAIL]"
+              class="btn btn--outline"
+            >
+              <!-- PLACEHOLDER: Substitua [PLACEHOLDER_EMAIL] pelo e-mail de contato -->
+              <i class="fas fa-envelope"></i> Enviar E-mail
+            </a>
+          </div>
+        </div>
+
+        <!-- Informações adicionais -->
+        <div class="contato__card contato__card--info">
+          <div class="contato__card-icon"><i class="fas fa-info-circle"></i></div>
+          <h3>Informações</h3>
+          <ul class="contato__info-list">
+            <li>
+              <i class="fas fa-phone"></i>
+              <!-- PLACEHOLDER: Insira o número de telefone/WhatsApp -->
+              <span>[INSERIR TELEFONE]</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <!-- PLACEHOLDER: Insira o e-mail de contato -->
+              <span>[INSERIR E-MAIL]</span>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+              <!-- PLACEHOLDER: Insira o perfil do Instagram -->
+              <a href="https://instagram.com/[PLACEHOLDER_INSTAGRAM]" target="_blank" rel="noopener noreferrer">@[INSERIR_INSTAGRAM]</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Atendimento: [PLACEHOLDER: dias e horários de atendimento]</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image: url('fotos/Área comum/IMG-20260619-WA0006.jpg')"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="cta-banner__content container">
+      <h2>Pronto para viver essa experiência?</h2>
+      <p>Reserve agora e garanta seu refúgio perfeito na natureza.</p>
+      <a href="#contato" class="btn btn--primary btn--lg">Fazer Reserva</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo-title">Chalezim</span>
+          <span class="footer__logo-sub">Hospedagens</span>
+          <p class="footer__desc">
+            <!-- PLACEHOLDER: Tagline ou descrição curta para o rodapé -->
+            Um refúgio de natureza e aconchego esperando por você.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#chales">Nossos Chalés</a></li>
+            <li><a href="#area-comum">Área Comum</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone"></i> <!-- PLACEHOLDER --> [INSERIR TELEFONE]</p>
+          <p><i class="fas fa-envelope"></i> <!-- PLACEHOLDER --> [INSERIR E-MAIL]</p>
+          <p><i class="fas fa-map-marker-alt"></i> <!-- PLACEHOLDER --> [INSERIR LOCALIZAÇÃO]</p>
+        </div>
+        <div class="footer__social">
+          <h4>Redes Sociais</h4>
+          <div class="footer__social-icons">
+            <a href="https://instagram.com/[PLACEHOLDER_INSTAGRAM]" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/55[PLACEHOLDER_TELEFONE]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.airbnb.com.br/users/show/[PLACEHOLDER_AIRBNB_USER]" target="_blank" rel="noopener noreferrer" aria-label="Airbnb">
+              <i class="fab fa-airbnb"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Chalezim Hospedagens. Todos os direitos reservados.</p>
+        <p>chalezim.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a
+    href="https://wa.me/55[PLACEHOLDER_TELEFONE]?text=Olá!%20Tenho%20interesse%20em%20uma%20reserva%20no%20Chalezim."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
